@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 70px; 
+    background-color: #282C34;
+}
+
+nav .navbar {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+nav .navbar .logo a{
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+nav .navbar .nav-links {
+    height: 100%;
+    line-height: 70px;
+}
+
+nav .navbar .nav-links .links {
+    display: flex;
+}
+
+nav .navbar .nav-links .links li {
+    list-style-type: none;
+}
+
+nav .navbar .nav-links .links li a {
+    color:whitesmoke;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.container {
+    margin: 80px auto;
+}
+
+/* SIGN-IN */
+
+.welcome {
+    display: block;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.welcome .welcome-head {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.welcome>p:nth-child(even) {
+    font-size: 15px;
+}
+
+button {
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 10px rgba(0,0,0,0.205),
+    inset 0 10px 10px rgba(253,253,253,0.205);
+    transition: box-shadow .4s, rgba(55,255,255,0.336) .8s, transform .4s;
+}
