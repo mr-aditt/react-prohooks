@@ -63,12 +63,12 @@ nav .navbar .nav-links .links li a {
     text-align: center;
 }
 
-.welcome .welcome-head {
-    font-size: 25px;
+.welcome .welcome-head p:nth-child(odd){
+    font-size: 35px;
     font-weight: 600;
 }
 
-.welcome>p:nth-child(even) {
+.welcome .welcome-head p:nth-child(even) {
     font-size: 15px;
 }
 
@@ -83,4 +83,30 @@ button:hover {
     box-shadow: 0 10px 10px rgba(0,0,0,0.205),
     inset 0 10px 10px rgba(253,253,253,0.205);
     transition: box-shadow .4s, rgba(55,255,255,0.336) .8s, transform .4s;
+}
+
+/* SEARCH COMPONENT */
+
+.search-result h1 {
+    padding: 15px 0 5px;
+    text-align: center;
+}
+
+input[type=search] {
+    margin: 0 auto;
+    width: 100%;
+}
+
+table {
+    margin: 0 auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    padding: 3px 3px;
 }

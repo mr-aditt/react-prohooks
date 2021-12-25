@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import { withOktaAuth } from '@okta/okta-react'
 
 export default withOktaAuth (class Home extends Component{
     
-    state = {authenticated: null};       
+    state = {authenticated: false};       
 
 
     checkAuthentication = async()=>{
@@ -35,12 +34,12 @@ export default withOktaAuth (class Home extends Component{
         
         const mainContent = this.state.authenticated ? (
             <div className='welcome-head'>
-                Welcome Book with Hooks
+                <p>Welcome Book with Hooks</p>
                 <button onClick={this.logout}>Logout</button>
             </div>
         ):(
             <div className='welcome-head'>
-                Welcome Book with Hooks
+                <p>Welcome Book with Hooks</p>
                 <p>You need to sign-in to use the application</p>
                 <button onClick={this.login}>Login</button>
             </div>
@@ -48,7 +47,6 @@ export default withOktaAuth (class Home extends Component{
         );
         return(
             <div className='welcome'>
-                HELLO
                 {mainContent}
             </div>
         )
